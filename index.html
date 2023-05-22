@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stock Market</title>
+</head>
+<body>
+    <section id="hero">
+        <div class="hero container">
+            <div>
+                <h1>Hello,<span></span></h1>
+                <h1>Welcome to<span></span> </h1>
+                <h1 id="sm">Stock Market<span></span></h1>
+                <a href="#" type="button" class="cta">Sign Up Now</a>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="services container">
+          <div class="service-top">
+            <h1 class="section-title">Serv<span>i</span>ces</h1>
+            <p>Stock market companie typically offer a range of services to cater to the needs of investors, traders, and financial institutions. Here are some common services provided by us</p>
+          </div>
+          <div class="service-bottom">
+            <div class="service-item">
+              <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+              <h2>Stock Trading Platform </h2>
+              <p>Companies offer online platforms or trading software that enable users to buy, sell, and trade stocks and other securities</p>
+            </div>
+            <div class="service-item">
+              <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+              <h2>Investment Advisory</h2>
+              <p> Stock market companies may provide investment advisory services, offering expert advice and recommendations on stock selection, portfolio management, and investment strategies</p>
+            </div>
+            <div class="service-item">
+              <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+              <h2>Market Data and Research</h2>
+              <p>Companies provide access to real-time market data, financial research reports, company profiles, historical price charts, and other relevant information to help investors make informed decisions</p>
+            </div>
+            <div class="service-item">
+              <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+              <h2>Stock Market Education</h2>
+              <p>Many stock market companies organize educational programs, webinars, workshops, and training sessions to educate investors and traders on various aspects of stock market investing, trading strategies, and risk management.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <h1 class="section-title">St<span>o</span>ck Mar<span>k</span>et D<span>a</span>ta</h1>
+            <div class="tradingview-widget-container">
+                <div id="tradingview-widget-container__widget"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+                 {
+                "symbols": [
+                  {
+                    "proName": "FOREXCOM:SPXUSD",
+                    "title": "S&P 500"
+                  },
+                  {
+                    "proName": "FOREXCOM:NSXUSD",
+                    "title": "US 100"
+                  },
+                  {
+                    "proName": "FX_IDC:EURUSD",
+                    "title": "EUR/USD"
+                  },
+                  {
+                    "proName": "BITSTAMP:BTCUSD",
+                    "title": "Bitcoin"
+                  },
+                  {
+                    "proName": "BITSTAMP:ETHUSD",
+                    "title": "Ethereum"
+                  }
+                ],
+                "showSymbolLogo": true,
+                "colorTheme": "light",
+                "isTransparent": false,
+                "displayMode": "adaptive",
+                "locale": "in",
+              }
+                </script>
+              </div>
+        </div>
+        <div>
+            <div class="tradingview-widget-container">
+                <div id="tradingview_adc8b"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+                <script type="text/javascript">
+                    new TradingView.widget(
+                        {
+                            "autosize": true,
+                            "symbol": "NASDAQ:AAPL",
+                            "interval": "D",
+                            "timezone": "Etc/UTC",
+                            "theme": "light",
+                            "style": "1",
+                            "locale": "in",
+                            "toolbar_bg": "#f1f3f6",
+                            "enable_publishing": false,
+                            "hide_legend": true,
+                            "withdateranges": true,
+                            "hide_side_toolbar": false,
+                            "save_image": false,
+                            "details": true,
+                            "container_id": "tradingview_adc8b"
+                        }
+                    );
+                </script>
+            </div> 
+        </div>   
+    </section>
+    <div id="button2">
+        <button type="button" id="button">Sign Up Now</button>
+    </div>
+    <section >
+        <div id="contact">
+            <div>    
+                <h1 class="section-title">Contact <span>info</span></h1>
+            </div>
+            <div class="cd" id="cd1">
+                <h1 class="con">Customer Care </h1>
+                <h3>+91 xxx xxx xxxx</h3>
+                <h3>+91 xxx xxx xxxx</h3>
+            </div>
+            <div class="cd" id="cd2">
+                <h1 class="con">Email</h1>
+                <h3>info1@xxxxxx.com</h3>
+                <h3>info2@xxxxxx.com</h3>
+            </div>
+            <div class="cd" id="cd3">
+                <h1 class="con">Address</h1>
+                <h3>abcdef, ghijkl, mnop</h3>
+                <h3>qrst uvwxyz. </h3>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
